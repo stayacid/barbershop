@@ -1,9 +1,11 @@
 html,
 body {
 	min-width: 1122px;
-	min-height: 1750px;
+	min-height: 1750px; //for net only
 	margin: 0;
 	padding: 0;
+	background: url("../img/background.jpg") no-repeat 50%;
+	color: #fff;
 }
 
 .clearfix::after {
@@ -16,7 +18,6 @@ body {
 	width: 940px;
 	padding: 0 10px;
 	margin: 0 auto;
-	background-color: #444;
 }
 
 //HEADER
@@ -27,14 +28,12 @@ body {
 .main-navigation {
 	float: left;
 	width: 780px;
-	min-height: 70px;
-	background-color: #999;
+	min-height: 70px; //for net only
 }
 
 .user-block {
 	float: right;
-	min-height: 70px;
-	background-color: #999;
+	min-height: 70px; //for net only
 	width: 140px;
 }
 
@@ -49,5 +48,60 @@ body {
 	margin-bottom: 25px;
 }
 
+.features {
+	&-item {
+		float: left;
+		width: 300px;
+		min-height: 175px; //for net only
+		margin-right: 20px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	margin-bottom: 80px;
+}
+
+.index-content {
+	padding: 50px 80px;
+	margin-bottom: 35px;
+	&-left {
+		min-height: 330px; //for net only
+		float: left;
+		width: 380px;
+	}
+	&-right {
+		float: right;
+		width: 300px;
+		min-height: 330px; //for net only
+	}
+}
 
 //MAIN END
+
+//FOOTER
+.main-footer {
+	margin-top: 65px;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.footer-contacts {
+	float: left;
+	width: 320px;
+	margin-right: 60px;
+	min-height: 90px; //for net only
+}
+
+.footer-social {
+	float: left;
+	width: 180px;
+	min-height: 90px; //for net only
+}
+
+.footer-copyright {
+	float: right;
+	width: 180px;
+	min-height: 90px; //for net only
+}
+
+//FOOTER END
