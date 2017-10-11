@@ -18,6 +18,7 @@ body {
 }
 .logo {
   float: left;
+  margin-right: 20px;
 }
 .main-navigation {
   float: left;
@@ -40,32 +41,8 @@ h1 {
 .breadcrumps {
   margin-bottom: 60px;
 }
-aside {
+.index-content-left {
   float: left;
-  width: 220px;
-  margin-right: 20px;
-}
-aside fieldset {
-  min-height: 260px;
-}
-.content {
-  float: right;
-  width: 700px;
-}
-.content .item {
-  width: 220px;
-  height: 286px;
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-.content .item:nth-of-type(3n+3) {
-  margin-right: 0;
-}
-.content .paginator {
-  float: left;
-  margin-top: 25px;
-  margin-bottom: 50px;
 }
 .main-footer {
   padding-top: 60px;
