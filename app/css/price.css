@@ -1,7 +1,7 @@
 html,
 body {
   min-width: 1200px;
-  min-height: 1173px;
+  min-height: 1124px;
   margin: 0;
   padding: 0;
 }
@@ -40,35 +40,19 @@ h1 {
 .breadcrumps {
   margin-bottom: 60px;
 }
+.index-content h2 {
+  text-align: center;
+}
 .index-content-left {
   float: left;
-  width: 460px;
-  margin-right: 90px;
-}
-.index-content-left img {
-  margin-right: 16px;
-}
-.index-content-left img:last-of-type {
-  margin-right: 0;
+  width: 380px;
+  margin-right: 100px;
+  margin-bottom: 80px;
 }
 .index-content-right {
   float: right;
   width: 390px;
-}
-.index-content-right .item-info {
-  margin-bottom: 35px;
-}
-.index-content-right .item-info .item-avaliable {
-  float: left;
-}
-.index-content-right .item-info .item-article {
-  float: right;
-}
-.index-content-right p {
-  margin-bottom: 40px;
-}
-.index-content-right .item-content ul {
-  padding-left: 15px;
+  margin-bottom: 80px;
 }
 .main-footer {
   padding-top: 60px;
