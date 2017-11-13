@@ -182,11 +182,46 @@ body {
 		margin-bottom: 25px;
 	}
 	p {
-		margin-bottom: 0;
+		margin-bottom: 0;	
 	}
 	time {
 		text-transform: none;
+		font-weight: 400;
 	}
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 33px;
+	color: #fff;
+	background-color: #000;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: "PT Sans Narrow", "Arial", sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	vertical-align: top;
+	text-align: center;
+	margin-right: 16px;
+	&:hover, &:active {
+		background-color: #663d15;
+	}
+	&:disabled, &.disabled {
+		cursor: default;
+		opacity: .5;
+	}
+	&.disabled:hover, &:disabled:hover {
+		background-color: #000;
+	}
+}
+
+.gallery {
+	position: relative;
+	height: 260px;
 }
 
 
