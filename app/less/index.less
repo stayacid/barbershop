@@ -78,7 +78,6 @@ body {
 	&:hover::before {
 		opacity: 1;
 	}
-
 	&::before {
 		content: "";
 		position: absolute;
@@ -95,41 +94,101 @@ body {
 //HEADER END
 
 //MAIN
+//LOGO 
 
 .index-logo {
 	width: 368px;
-	min-height: 240px;
+	height: 204px;
 	margin: 0 auto;
 	margin-bottom: 25px;
+	img {
+		width: 368px;
+		height: 204px;
+	}
 }
+
+//FEATURES 
 
 .features {
 	&-item {
 		float: left;
 		width: 300px;
-		min-height: 175px; //for net only
 		margin-right: 20px;
+		text-align: center;
 		&:last-child {
 			margin-right: 0;
+		}
+		p {
+			margin: 10px;
+			margin-bottom: 0;
+		}
+	}
+	&-name {
+		display: block;
+		font-size: 30px;
+		line-height: 42px;
+		margin-bottom: 30px;
+		padding-bottom: 35px;
+		position: relative;
+		&::after {
+			content: '';
+			display: block;
+			width: 20px;
+			height: 20px;
+			background-color: #fff;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			margin-left: -10px;
+			transform: rotate(45deg);
 		}
 	}
 	margin-bottom: 80px;
 }
 
+//NEWS AND GALLERY
+
 .index-content {
 	padding: 50px 80px;
 	margin-bottom: 35px;
+	color: #000;
+	background: url("../img/index-content-shadow.png") no-repeat center, #f8f5f2 url("../img/pattern-white.jpg");
 	&-left {
-		min-height: 330px; //for net only
 		float: left;
 		width: 380px;
 	}
 	&-right {
 		float: right;
 		width: 300px;
-		min-height: 330px; //for net only
+	}
+	&-title {
+		margin: 0;
+		margin-bottom: 25px;
+		font-size: 30px;
+		line-height: 42px;
+	}
+	p {
+		margin: 0;
+		margin-bottom: 25px;
 	}
 }
+
+.news-preview {
+	margin: 0;
+	padding: 0;
+	padding-right: 35px;
+	list-style: none;
+	li {
+		margin-bottom: 25px;
+	}
+	p {
+		margin-bottom: 0;
+	}
+	time {
+		text-transform: none;
+	}
+}
+
 
 //MAIN END
 
