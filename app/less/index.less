@@ -5,7 +5,7 @@ body {
 	line-height: 24px;
 	text-transform: uppercase;
 	min-width: 960px;
-	background: #000 url("../img/background.jpg") no-repeat center top;
+	background: #242424 url("../img/background.jpg") no-repeat center top;
 	color: #fff;
 	margin: 0;
 	padding: 0;
@@ -83,7 +83,7 @@ body {
 		position: absolute;
 		top: 28px;
 		left: 20px;
-		width: 18px;
+		width: 21px;
 		height: 18px;
 		background: url("../img/sprite.png") no-repeat;
 		opacity: .3;
@@ -199,10 +199,8 @@ body {
 	outline: none;
 	cursor: pointer;
 	font-weight: 700;
-	font-size: 14px;
-	line-height: 24px;
-	font-family: "PT Sans Narrow", "Arial", sans-serif;
-	text-transform: uppercase;
+	font: inherit;
+	text-transform: inherit;
 	text-decoration: none;
 	vertical-align: top;
 	text-align: center;
@@ -222,8 +220,57 @@ body {
 .gallery {
 	position: relative;
 	height: 260px;
+	&-content {
+		height: 164px;
+		margin: 0;
+		background-color: #ccc;
+		border: 7px solid #fff;
+		img {
+			width: 286px;
+			height: 164px;
+		}
+	}
+	& .btn {
+		position: absolute;
+		bottom: 0;
+		width: 140px;
+		margin: 0;
+	}
+	&-prev {
+		left: 0;
+	}
+	&-next {
+		right: 0;
+	}
 }
 
+.appointment-form {
+	input {
+		background-color: #f9f6f3;
+		border: 2px solid #000;
+		outline: none;
+		font-size: 14px;
+		line-height: 24px;
+		font: inherit;
+		text-transform: inherit;
+		color: inherit;
+		width: 106px;
+		padding: 7px 15px;
+		float: left;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+		&:focus {
+			border: 2px solid #663d15;
+		}
+	}
+	& .btn {
+		clear: both;
+		width: 100%;
+	}
+}
 
 //MAIN END
 
@@ -232,25 +279,83 @@ body {
 	margin-top: 65px;
 	padding-top: 60px;
 	padding-bottom: 40px;
+	color: #ffffff;
+	background: #252525 url("../img/pattern-black.jpg");
 }
 
 .footer-contacts {
 	float: left;
 	width: 320px;
 	margin-right: 60px;
-	min-height: 90px; //for net only
+	a {
+		color: #ffffff;
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }
 
 .footer-social {
 	float: left;
 	width: 180px;
-	min-height: 90px; //for net only
+	text-align: center;
+	p {
+		margin: 0;
+		margin-bottom: 15px;
+	}
+}
+
+.social-btn {
+	display: inline-block;
+	width: 43px;
+	height: 43px;
+	margin: 0 2px;
+	background: #000 url("../img/sprite.png") no-repeat center;
+	font-size: 0;
+	vertical-align: top;
+	text-decoration: none;
+	transition: background-position .5s, background-color .5s;
+	&:hover {
+		background-color: #fff;
+	}
+}
+
+.social-btn-vk {
+	background-position: 10px -163px;
+	&:hover {
+		background-position: 10px -295px;
+	}
+}
+
+.social-btn-fb {
+	background-position: 10px -80px;
+	&:hover {
+		background-position: 10px -205px;
+	}
+}
+
+.social-btn-inst {
+	background-position: 10px -122px;
+	&:hover {
+		background-position: 10px -248px;
+	}
 }
 
 .footer-copyright {
 	float: right;
-	width: 180px;
-	min-height: 90px; //for net only
+	max-width: 180px;
+	p {
+		margin: 0;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+	& .btn {
+		margin-right: 0;
+		&:hover {
+			color: #000000;
+			background-color: #fff;
+		}
+	}
 }
 
 //FOOTER END
