@@ -82,7 +82,7 @@ body {
 		content: "";
 		position: absolute;
 		top: 28px;
-		left: 20px;
+		left: 17px;
 		width: 21px;
 		height: 18px;
 		background: url("../img/sprite.png") no-repeat;
@@ -100,7 +100,7 @@ body {
 	width: 368px;
 	height: 204px;
 	margin: 0 auto;
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 	img {
 		width: 368px;
 		height: 204px;
@@ -127,7 +127,7 @@ body {
 		display: block;
 		font-size: 30px;
 		line-height: 42px;
-		margin-bottom: 30px;
+		margin-bottom: 35px;
 		padding-bottom: 35px;
 		position: relative;
 		&::after {
@@ -149,7 +149,7 @@ body {
 //NEWS AND GALLERY
 
 .index-content {
-	padding: 50px 80px;
+	padding: 40px 80px 55px;
 	margin-bottom: 35px;
 	color: #000;
 	background: url("../img/index-content-shadow.png") no-repeat center, #f8f5f2 url("../img/pattern-white.jpg");
@@ -160,6 +160,7 @@ body {
 	&-right {
 		float: right;
 		width: 300px;
+		
 	}
 	&-title {
 		margin: 0;
@@ -173,10 +174,23 @@ body {
 	}
 }
 
+.index-content:last-of-type {
+	padding-top: 45px;
+	p:last-of-type {
+		margin-bottom: 45px;
+	}
+}
+
+.index-content-right:last-of-type {
+	p:last-of-type {
+		margin-bottom: 30px;
+	}
+}
+
 .news-preview {
 	margin: 0;
 	padding: 0;
-	padding-right: 35px;
+	padding-right: 80px;
 	list-style: none;
 	li {
 		margin-bottom: 25px;
@@ -245,6 +259,7 @@ body {
 }
 
 .appointment-form {
+	
 	input {
 		background-color: #f9f6f3;
 		border: 2px solid #000;
@@ -269,6 +284,7 @@ body {
 	& .btn {
 		clear: both;
 		width: 100%;
+		margin-top: 10px;
 	}
 }
 
@@ -343,7 +359,7 @@ body {
 
 .footer-copyright {
 	float: right;
-	max-width: 180px;
+	max-width: 140px;
 	p {
 		margin: 0;
 		margin-bottom: 15px;
@@ -351,6 +367,7 @@ body {
 	}
 	& .btn {
 		margin-right: 0;
+		padding: 10px 20px;
 		&:hover {
 			color: #000000;
 			background-color: #fff;
