@@ -219,14 +219,14 @@ h1 {
 .index-content-right .item-content ul {
   padding-left: 15px;
 }
-.index-content-right .good-buy {
+.index-content-right .item-buy {
   margin-bottom: 65px;
 }
-.index-content-right .good-buy .btn {
+.index-content-right .item-buy .btn {
   margin-left: -5px;
   padding: 10px 20px;
 }
-.index-content-right .good {
+.index-content-right .item {
   display: inline-block;
   padding: 10px 26px 10px 30px;
 }

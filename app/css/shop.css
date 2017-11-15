@@ -1,7 +1,12 @@
-html,
 body {
-  min-width: 1200px;
-  min-height: 1173px;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  min-width: 960px;
+  background: #f7f4f0 url("../img/item-bg.jpg") no-repeat center top;
+  color: #000;
   margin: 0;
   padding: 0;
 }
@@ -15,29 +20,161 @@ body {
   padding: 0 10px;
   margin: 0 auto;
 }
+.btn {
+  display: inline-block;
+  padding: 10px 33px;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  font: inherit;
+  text-transform: inherit;
+  text-decoration: none;
+  vertical-align: top;
+  text-align: center;
+  margin-right: 16px;
+}
+.btn:hover,
+.btn:active {
+  background-color: #663d15;
+}
+.btn:disabled,
+.btn.disabled {
+  cursor: default;
+  opacity: .5;
+}
+.btn.disabled:hover,
+.btn:disabled:hover {
+  background-color: #000;
+}
 .logo {
   float: left;
+  margin-right: 20px;
+  height: 24px;
+  width: 111px;
+  padding-top: 23px;
+  padding-left: 20px;
+}
+.main-header {
+  margin-bottom: 60px;
+  background-color: #000;
+  color: #ffffff;
 }
 .main-navigation {
   float: left;
-  width: 780px;
-  min-height: 70px;
+  width: 680px;
+}
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+.main-navigation li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+.main-navigation li:active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: #fff;
+}
+.main-navigation a {
+  color: #ffffff;
+  display: block;
+  padding: 25px 20px;
+  text-decoration: none;
+}
+.main-navigation a:hover {
+  background: #242424;
 }
 .user-block {
   float: right;
-  min-height: 70px;
-  width: 140px;
+  max-width: 140px;
+}
+.login {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 25px 20px;
+  padding-left: 50px;
+  position: relative;
+  text-decoration: none;
+  vertical-align: top;
+}
+.login:hover {
+  background-color: #242424;
+}
+.login:hover::before {
+  opacity: 1;
+}
+.login::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 17px;
+  width: 21px;
+  height: 18px;
+  background: url("../img/sprite.png") no-repeat;
+  opacity: .3;
 }
 main {
   background: url("../img/bg-shop.jpg") repeat 50%;
-  padding-top: 60px;
 }
 h1 {
   margin-top: 0;
   margin-bottom: 25px;
+  font-size: 30px;
 }
 .breadcrumps {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
+  padding-left: 0;
+}
+.breadcrumps ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.breadcrumps li {
+  display: inline-block;
+}
+.breadcrumps li:last-child a {
+  color: #aba9a7;
+}
+.breadcrumps li:last-child a::after {
+  display: none;
+}
+.breadcrumps a {
+  color: #000;
+  display: block;
+  padding-right: 40px;
+  text-decoration: none;
+  position: relative;
+}
+.breadcrumps a::after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  position: absolute;
+  bottom: 8px;
+  right: 15px;
+  margin-left: -10px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 aside {
   float: left;
@@ -45,7 +182,52 @@ aside {
   margin-right: 20px;
 }
 aside fieldset {
-  min-height: 260px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
+}
+aside fieldset:last-of-type {
+  margin-bottom: 40px;
+}
+aside legend {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+aside .checkbox-label {
+  display: block;
+  margin-bottom: 13px;
+  margin-left: 45px;
+  position: relative;
+  cursor: pointer;
+}
+aside .checkbox-label::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border: 2px solid;
+  position: absolute;
+  left: -45px;
+}
+aside .radio-label {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 45px;
+  position: relative;
+  cursor: pointer;
+}
+aside .radio-label::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border: 2px solid;
+  position: absolute;
+  left: -45px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+aside input {
+  display: none;
 }
 .content {
   float: right;
@@ -67,22 +249,80 @@ aside fieldset {
   margin-bottom: 50px;
 }
 .main-footer {
-  padding-top: 60px;
+  margin-top: 40px;
+  padding-top: 57px;
   padding-bottom: 40px;
+  color: #ffffff;
+  background: #252525 url("../img/pattern-black.jpg");
 }
 .footer-contacts {
   float: left;
   width: 320px;
-  margin-right: 60px;
-  min-height: 90px;
+  margin-right: 65px;
+}
+.footer-contacts a {
+  color: #ffffff;
+}
+.footer-contacts a:hover {
+  text-decoration: none;
 }
 .footer-social {
   float: left;
   width: 180px;
-  min-height: 90px;
+  text-align: center;
+}
+.footer-social p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+.social-btn {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin: 0 2px;
+  background: #000 url("../img/sprite.png") no-repeat center;
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+  -webkit-transition: background-position 0.5s, background-color 0.5s;
+  -o-transition: background-position 0.5s, background-color 0.5s;
+  transition: background-position 0.5s, background-color 0.5s;
+}
+.social-btn:hover {
+  background-color: #fff;
+}
+.social-btn-vk {
+  background-position: 10px -163px;
+}
+.social-btn-vk:hover {
+  background-position: 10px -295px;
+}
+.social-btn-fb {
+  background-position: 10px -80px;
+}
+.social-btn-fb:hover {
+  background-position: 10px -205px;
+}
+.social-btn-inst {
+  background-position: 10px -122px;
+}
+.social-btn-inst:hover {
+  background-position: 10px -248px;
 }
 .footer-copyright {
   float: right;
-  width: 180px;
-  min-height: 90px;
+  max-width: 140px;
+}
+.footer-copyright p {
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.footer-copyright .btn {
+  margin-right: 0;
+  padding: 10px 20px;
+}
+.footer-copyright .btn:hover {
+  color: #000000;
+  background-color: #fff;
 }
