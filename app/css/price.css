@@ -1,7 +1,12 @@
-html,
 body {
-  min-width: 1200px;
-  min-height: 1060px;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  min-width: 960px;
+  background: #f7f4f0 url("../img/item-bg.jpg") no-repeat center top;
+  color: #000;
   margin: 0;
   padding: 0;
 }
@@ -15,62 +20,317 @@ body {
   padding: 0 10px;
   margin: 0 auto;
 }
+.btn {
+  display: inline-block;
+  padding: 10px 33px;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  font: inherit;
+  text-transform: inherit;
+  text-decoration: none;
+  vertical-align: top;
+  text-align: center;
+}
+.btn:hover,
+.btn:active {
+  background-color: #663d15;
+}
+.btn:disabled,
+.btn.disabled {
+  cursor: default;
+  opacity: .5;
+}
+.btn.disabled:hover,
+.btn:disabled:hover {
+  background-color: #000;
+}
 .logo {
   float: left;
   margin-right: 20px;
+  height: 24px;
+  width: 111px;
+  padding-top: 23px;
+  padding-left: 20px;
+}
+.main-header {
+  margin-bottom: 60px;
+  background-color: #000;
+  color: #ffffff;
 }
 .main-navigation {
   float: left;
-  width: 780px;
-  min-height: 70px;
+  width: 680px;
+}
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+.main-navigation li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+.main-navigation a {
+  color: #ffffff;
+  display: block;
+  padding: 25px 20px;
+  text-decoration: none;
+}
+.main-navigation a:hover {
+  background: #242424;
+}
+.main-navigation .active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: #fff;
 }
 .user-block {
   float: right;
-  min-height: 70px;
-  width: 140px;
+  max-width: 140px;
 }
-main {
-  background: url("../img/bg-shop.jpg") repeat 50%;
-  padding-top: 60px;
+.login {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 25px 20px;
+  padding-left: 50px;
+  position: relative;
+  text-decoration: none;
+  vertical-align: top;
+}
+.login:hover {
+  background-color: #242424;
+}
+.login:hover::before {
+  opacity: 1;
+}
+.login::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 17px;
+  width: 21px;
+  height: 18px;
+  background: url("../img/sprite.png") no-repeat;
+  opacity: .3;
 }
 h1 {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  font-size: 30px;
 }
 .breadcrumps {
   margin-bottom: 60px;
+  padding-left: 0;
+}
+.breadcrumps ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.breadcrumps li {
+  display: inline-block;
+}
+.breadcrumps li:last-child a {
+  color: #aba9a7;
+}
+.breadcrumps li:last-child a::after {
+  display: none;
+}
+.breadcrumps a {
+  color: #000;
+  display: block;
+  padding-right: 40px;
+  text-decoration: none;
+  position: relative;
+}
+.breadcrumps a::after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+  margin-left: -10px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .index-content h2 {
   text-align: center;
+  font-size: 48px;
+  position: relative;
+  margin-bottom: 50px;
+}
+.index-content h2::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 160px;
+  background-color: #000;
+  left: 0;
+  top: 50%;
+}
+.index-content h2::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 160px;
+  background-color: #000;
+  right: 0;
+  top: 50%;
+}
+h3 {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 30px;
 }
 .index-content-left {
   float: left;
-  width: 380px;
-  margin-right: 100px;
+  max-width: 390px;
   margin-bottom: 80px;
+  margin-right: 90px;
+}
+.index-content-left ul {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  list-style: none;
+}
+.index-content-left li {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 14px;
+}
+.index-content-left li::after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  margin-left: -10px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .index-content-right {
-  float: right;
-  width: 390px;
+  float: left;
+  width: 460px;
   margin-bottom: 80px;
 }
+.index-content-right h3 {
+  margin-bottom: 35px;
+}
+.index-content-right table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 120px;
+}
+.index-content-right td {
+  width: 50%;
+  border: 2px solid #000;
+  padding: 8px 15px;
+}
+.index-content-right td:last-child {
+  text-align: center;
+}
+.index-content-right .description {
+  max-width: 360px;
+}
 .main-footer {
-  padding-top: 60px;
+  margin-top: 40px;
+  padding-top: 57px;
   padding-bottom: 40px;
+  color: #ffffff;
+  background: #252525 url("../img/pattern-black.jpg");
 }
 .footer-contacts {
   float: left;
   width: 320px;
-  margin-right: 60px;
-  min-height: 90px;
+  margin-right: 65px;
+}
+.footer-contacts a {
+  color: #ffffff;
+}
+.footer-contacts a:hover {
+  text-decoration: none;
 }
 .footer-social {
   float: left;
   width: 180px;
-  min-height: 90px;
+  text-align: center;
+}
+.footer-social p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+.social-btn {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin: 0 2px;
+  background: #000 url("../img/sprite.png") no-repeat center;
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+  -webkit-transition: background-position 0.5s, background-color 0.5s;
+  -o-transition: background-position 0.5s, background-color 0.5s;
+  transition: background-position 0.5s, background-color 0.5s;
+}
+.social-btn:hover {
+  background-color: #fff;
+}
+.social-btn-vk {
+  background-position: 10px -163px;
+}
+.social-btn-vk:hover {
+  background-position: 10px -295px;
+}
+.social-btn-fb {
+  background-position: 10px -80px;
+}
+.social-btn-fb:hover {
+  background-position: 10px -205px;
+}
+.social-btn-inst {
+  background-position: 10px -122px;
+}
+.social-btn-inst:hover {
+  background-position: 10px -248px;
 }
 .footer-copyright {
   float: right;
-  width: 180px;
-  min-height: 90px;
+  max-width: 140px;
+}
+.footer-copyright p {
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.footer-copyright .btn {
+  margin-right: 0;
+  padding: 10px 20px;
+}
+.footer-copyright .btn:hover {
+  color: #000000;
+  background-color: #fff;
 }
