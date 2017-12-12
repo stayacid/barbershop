@@ -90,12 +90,20 @@ body {
   background: #242424;
 }
 .main-navigation .active::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
   background: #fff;
+  bottom: 0;
+  content: "";
+  height: 5px;
+  left: 20px;
+  position: absolute;
+  right: 20px;
+}
+.main-navigation a.active:hover {
+  background: none;
+}
+.main-navigation span.active {
+  display: block;
+  padding: 25px 20px;
 }
 .user-block {
   float: right;
@@ -145,12 +153,6 @@ h1 {
 .breadcrumps li {
   display: inline-block;
 }
-.breadcrumps li:last-child a {
-  color: #aba9a7;
-}
-.breadcrumps li:last-child a::after {
-  display: none;
-}
 .breadcrumps a {
   color: #000;
   display: block;
@@ -171,6 +173,9 @@ h1 {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+.breadcrumps .current {
+  color: #aba9a7;
 }
 .index-content h2 {
   text-align: center;
