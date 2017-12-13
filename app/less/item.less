@@ -151,8 +151,10 @@ h1 {
 	font-size: 30px;
 }
 //BREADCRUMPS
+
 .breadcrumps {
-	margin-bottom: 52px;
+	margin-bottom: 60px;
+	padding-left: 0;
 	ul {
 		margin: 0;
 		padding: 0;
@@ -160,13 +162,7 @@ h1 {
 	}
 	li {
 		display: inline-block;
-	}
-	a {
-		color: #000;
-		display: block;
-		padding-right: 40px;
-		text-decoration: none;
-		position: relative;
+		position: relative;	
 		&::after {
 			content: '';
 			display: block;
@@ -180,8 +176,21 @@ h1 {
 			transform: rotate(45deg);
 		}
 	}
+	a {
+		color: #000;
+		display: block;
+		margin-right: 40px;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+		
+	}
 	.current {
 		color: #aba9a7;
+		&::after {
+			display: none;
+		}
 	}
 }
 

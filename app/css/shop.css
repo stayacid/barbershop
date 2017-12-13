@@ -1,39 +1,39 @@
 body {
-  font-family: "PT Sans Narrow", Arial, sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  min-width: 960px;
   background: #f7f4f0 url("../img/item-bg.jpg") no-repeat center top;
   color: #000;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
   margin: 0;
+  min-width: 960px;
   padding: 0;
+  text-transform: uppercase;
 }
 .clearfix::after {
+  clear: both;
   content: "";
   display: table;
-  clear: both;
 }
 .container {
-  width: 940px;
-  padding: 0 10px;
   margin: 0 auto;
+  padding: 0 10px;
+  width: 940px;
 }
 .btn {
-  display: inline-block;
-  padding: 10px 33px;
-  color: #fff;
   background-color: #000;
   border: none;
-  outline: none;
+  color: #fff;
   cursor: pointer;
+  display: inline-block;
   font-weight: 700;
   font: inherit;
-  text-transform: inherit;
-  text-decoration: none;
-  vertical-align: top;
+  outline: none;
+  padding: 10px 33px;
   text-align: center;
+  text-decoration: none;
+  text-transform: inherit;
+  vertical-align: top;
 }
 .btn:hover,
 .btn:active {
@@ -155,30 +155,36 @@ h1 {
 }
 .breadcrumps li {
   display: inline-block;
+  position: relative;
+}
+.breadcrumps li::after {
+  background-color: #000;
+  bottom: 4px;
+  content: '';
+  display: block;
+  height: 8px;
+  margin-left: -10px;
+  position: absolute;
+  right: 15px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 8px;
 }
 .breadcrumps a {
   color: #000;
   display: block;
-  padding-right: 40px;
+  margin-right: 40px;
   text-decoration: none;
-  position: relative;
 }
-.breadcrumps a::after {
-  content: '';
-  display: block;
-  width: 8px;
-  height: 8px;
-  background-color: #000;
-  position: absolute;
-  bottom: 5px;
-  right: 15px;
-  margin-left: -10px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+.breadcrumps a:hover {
+  text-decoration: underline;
 }
 .breadcrumps .current {
   color: #aba9a7;
+}
+.breadcrumps .current::after {
+  display: none;
 }
 aside {
   float: left;

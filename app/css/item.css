@@ -142,7 +142,8 @@ h1 {
   font-size: 30px;
 }
 .breadcrumps {
-  margin-bottom: 52px;
+  margin-bottom: 60px;
+  padding-left: 0;
 }
 .breadcrumps ul {
   margin: 0;
@@ -151,15 +152,9 @@ h1 {
 }
 .breadcrumps li {
   display: inline-block;
-}
-.breadcrumps a {
-  color: #000;
-  display: block;
-  padding-right: 40px;
-  text-decoration: none;
   position: relative;
 }
-.breadcrumps a::after {
+.breadcrumps li::after {
   content: '';
   display: block;
   width: 8px;
@@ -173,8 +168,20 @@ h1 {
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
+.breadcrumps a {
+  color: #000;
+  display: block;
+  margin-right: 40px;
+  text-decoration: none;
+}
+.breadcrumps a:hover {
+  text-decoration: underline;
+}
 .breadcrumps .current {
   color: #aba9a7;
+}
+.breadcrumps .current::after {
+  display: none;
 }
 .index-content-left {
   float: left;
