@@ -380,25 +380,76 @@ body {
 //POP-UP 
 
 .modal-content {
-	width: 300px;
-	padding: 50px 80px;
-	color: #000;
 	background: #f8f3f0 url("../img/pattern-white.jpg");
-	position: absolute;
-	top: 120px;
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+	color: #000;
 	left: 50%;
 	margin-left: -230px;
-	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+	padding: 50px 80px;
+	position: absolute;
+	top: 120px;
+	width: 300px;
 	&-close {
-		width: 22px;
-		height: 22px;
-		font-size: 0;
-		background-color: red;
+		background-color: transparent;
 		border: 0;
-		outline: 0;
 		cursor: pointer;
+		font-size: 0;
+		height: 22px;
+		outline: 0;
 		position: absolute;
-		top: 0;
 		right: -34px;
+		top: 0;
+		width: 22px;
+		&::before,
+		&::after {
+			background-color: #d0d0d0;
+			border-radius: 1px;
+			content: '';
+			height: 3px;
+			left: 2px;
+			position: absolute;
+			top: 10px;
+			width: 19px;
+		}
+		&::before {
+			transform: rotate(45deg);
+		}
+		&::after {
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+.modal-content {
+	h2 {
+		font-size: 30px;
+		line-height: 42px;
+		margin-bottom: 20px;
+		margin: 0;
+	}
+	p {
+		margin-bottom: 14px;
+		margin: 0;
+	}
+	.login-form {
+		margin-top: 30px;
+		margin-bottom: 10px;
+		input[type="text"],
+		input[type="password"] {
+			font-size: 14px;
+			line-height: 24px;
+			font-family: "PT Sans Narrow", Arial, sans-serif;
+			color: #000;
+			text-transform: uppercase;
+			width: 236px;
+			margin: 0;
+			margin-bottom: 10px;
+			padding: 10px 20px;
+			padding-right: 40px;
+			background-color: #f9f6f3;
+			border: 2px solid #000;
+			outline: none;
+			font-weight: 700;
+		}
 	}
 }
