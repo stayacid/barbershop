@@ -349,26 +349,26 @@ aside input {
 .content .item .item-category {
   text-transform: none;
 }
-.content .paginator {
+.paginator {
   float: left;
   margin-top: 35px;
   margin-bottom: 20px;
 }
-.content .paginator a {
+.paginator a {
   text-decoration: none;
   color: #fff;
   background-color: #000;
   padding: 13px 18px;
   margin-right: 7px;
 }
-.content .paginator a:hover {
+.paginator a:hover {
   background-color: #663d15;
 }
-.content .paginator .active {
+.paginator .active {
   background-color: #fff;
   color: #000;
 }
-.content .paginator .active:hover {
+.paginator .active:hover {
   background-color: #fff;
 }
 .main-footer {
