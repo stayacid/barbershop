@@ -190,32 +190,32 @@ h1 {
 .breadcrumps .current::after {
   display: none;
 }
-aside {
+.sort-form {
   float: left;
   width: 220px;
   margin-right: 20px;
 }
-aside fieldset {
+.sort-form .sort-form__fieldset {
   border: none;
   padding: 0;
   margin: 0;
   margin-bottom: 35px;
 }
-aside fieldset:last-of-type {
+.sort-form .sort-form__fieldset:last-of-type {
   margin-bottom: 40px;
 }
-aside legend {
+.sort-form legend {
   font-size: 24px;
   margin-bottom: 30px;
 }
-aside .checkbox-label {
+.sort-form .checkbox-label {
   display: block;
   margin-bottom: 20px;
   margin-left: 45px;
   position: relative;
   cursor: pointer;
 }
-aside .checkbox-label::before {
+.sort-form .checkbox-label::before {
   content: '';
   width: 16px;
   height: 16px;
@@ -223,31 +223,31 @@ aside .checkbox-label::before {
   position: absolute;
   left: -45px;
 }
-aside .checkbox-label:hover {
+.sort-form .checkbox-label:hover {
   color: #663d15;
 }
-aside .checkbox-label:hover::before {
+.sort-form .checkbox-label:hover::before {
   color: #000;
 }
-aside .checkbox-label:disabled,
-aside .checkbox-label.disabled {
+.sort-form .checkbox-label:disabled,
+.sort-form .checkbox-label.disabled {
   cursor: default;
   opacity: .3;
 }
-aside .checkbox-label.disabled:hover,
-aside .checkbox-label:disabled:hover {
+.sort-form .checkbox-label.disabled:hover,
+.sort-form .checkbox-label:disabled:hover {
   cursor: default;
   color: #000;
   opacity: .3;
 }
-aside .radio-label {
+.sort-form .radio-label {
   display: block;
   margin-bottom: 20px;
   margin-left: 45px;
   position: relative;
   cursor: pointer;
 }
-aside .radio-label::before {
+.sort-form .radio-label::before {
   content: '';
   width: 16px;
   height: 16px;
@@ -257,25 +257,25 @@ aside .radio-label::before {
   -webkit-border-radius: 50%;
           border-radius: 50%;
 }
-aside .radio-label:hover {
+.sort-form .radio-label:hover {
   color: #663d15;
 }
-aside .radio-label:hover::before,
-aside .radio-label:hover::after {
+.sort-form .radio-label:hover::before,
+.sort-form .radio-label:hover::after {
   color: #000;
 }
-aside .radio-label:disabled,
-aside .radio-label.disabled {
+.sort-form .radio-label:disabled,
+.sort-form .radio-label.disabled {
   cursor: default;
   opacity: .3;
 }
-aside .radio-label.disabled:hover,
-aside .radio-label:disabled:hover {
+.sort-form .radio-label.disabled:hover,
+.sort-form .radio-label:disabled:hover {
   cursor: default;
   color: #000;
   opacity: .3;
 }
-aside input {
+.sort-form input {
   display: none;
 }
 #check-1:checked:checked ~ label[for="check-1"]::before,
